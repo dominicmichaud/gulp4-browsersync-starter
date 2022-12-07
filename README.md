@@ -10,7 +10,7 @@ This project uses [Docker](https://docs.docker.com/get-started/) to setup all th
 
 - MAC OSX: [Docker Desktop App](https://docs.docker.com/desktop/install/mac-install/)
 - Windows OS: [Docker Desktop App](https://docs.docker.com/desktop/install/windows-install/)
-- Linux OS: [https://docs.docker.com/desktop/install/linux-install/)
+- Linux OS: [Docker Desktop App](https://docs.docker.com/desktop/install/linux-install/)
 
 Once you have the Docker Desktop app installed on your machine, you will be able to run this simple command
 
