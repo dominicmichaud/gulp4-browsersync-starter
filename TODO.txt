@@ -1,0 +1,22 @@
+- Remove Node modules from local machine
+
+- Test out different scenarios
+    - Package.json with a simple dev-dependencies:
+        - in Dockerfile:
+            - RUN npm install (for package already existing in devDependencies)
+            - Install remaining packages from Dockerfile 
+            - RUN npm install --save-dev gulp gulp-sass gulp-postcss gulp-autoprefixer gulp-clean-css gulp-rename gulp-terser browser-sync cssnano postcss
+
+    - Remove package.json and package.lock
+        - in Dockerfile:
+            - COPY . .
+            - RUN npm init -y
+            - RUN npm install --global gulp-cli
+            - RUN npm install --save-dev gulp gulp-sass gulp-postcss gulp-autoprefixer gulp-clean-css gulp-rename gulp-terser browser-sync cssnano postcss
+
+- Test if possible to generate package.json inside the container without having it in the git repo
+
+- Gulpfile, rename CSS and JS file to .min.*
+
+- Check if gulp package exists to move src/index.html to dist folder
+

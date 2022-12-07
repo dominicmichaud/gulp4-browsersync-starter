@@ -1,0 +1,22 @@
+$color: aquamarine;
+
+body {
+    background-color: $color;
+}
+
+h1 {
+    color: #000;
+    text-transform: uppercase;
+}
+
+a {
+    display: block;
+    color: cornflowerblue;
+    transition: color 250ms ease;
+
+    &:hover {
+        color: green;
+    }
+}
+
+@import 'abstracts/image';
